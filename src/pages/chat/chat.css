@@ -1,0 +1,130 @@
+.chat{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.chat .container{
+    padding: 5px 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 600px;
+    position: relative;
+}
+.chat header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+}
+.chat header .left i{
+    cursor: pointer;
+    font-size: 20px;
+    color: #444;
+    transition: .4s ease;
+}
+.chat header .left i:hover{
+    rotate: 360deg;
+    scale: 1.2;
+}
+.chat header .right i{
+    cursor: pointer;
+    font-size: 20px;
+    color: #444;
+    transition: .4s ease;
+}
+.chat header .right i:hover{
+    scale: 1.1;
+    color: #666;
+}
+.chat header img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.chat header .left{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.chat .chat-box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+
+.chat .container .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #444;
+    padding-top: 10px;
+}
+.chat .container .bottom textarea {
+    width: calc(100% - 34px);
+    resize: none;
+    border: 2px solid #bbb;
+    outline: none;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px 10px;
+    height: 50px;
+    transition: .3s ease;
+}
+.chat .container .bottom textarea:focus {
+    border-color: #444;
+}
+.chat .container .bottom i {
+    width: 34px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    color: #bbb;
+    transition: .3s ease;
+}
+.chat .container .bottom i:hover {
+    color: #444;
+}
+
+.chat .container aside.EmojiPickerReact {
+    position: absolute !important;
+    bottom: 75px;
+    right: 25px;
+    opacity: 0;
+    scale: 0;
+    transform-origin: bottom right;
+    width: 0 !important;
+    height: 0 !important;
+}
+.chat .container aside.EmojiPickerReact.active {
+    opacity: 1;
+    scale: 1;
+    width: 320px !important;
+    height: 420px !important;
+}
+
+
+
+
+
+.call-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.call-controls button {
+    margin: 0 10px;
+}

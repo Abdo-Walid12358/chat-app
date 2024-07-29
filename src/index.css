@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    overflow-x: hidden;
+    /* background-color: var(--color-main); */
+}
+.hide {
+    display: none !important;
+}
+img {
+    user-select: none;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background-color:#555;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: #222;
+}
+
+/* error-message */
+form .error-message {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 8px 0;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0.75);
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 5px;
+}
+form .error-message.success {
+    background-color: rgba(0, 128, 0, 0.5);
+    border: 2px solid green;
+}
+:root {
+    --color-main: white;
+    --color-main-2: black;
+    --color--1: #00a884;
+    --color--1-opacity: #00a88485;
+    --color--2: #252a34;
+    --color--3: #00a884;
+    --color--4: #eaeaea;
+    --section-1: #151515;
+    --section-2: #1e1e1e;
+    --shadow: rgba(0, 0, 0, 0.2);
+    --padding-form: 20px;
+    --border-radius: 5px;
+    --time: 0.3s;
+    --time-loading: 0.5s;
+}
+.dark-mode {
+    --color-main: white;
+    --color-main-2: black;
+    --section-1: #151515;
+    --section-2: #1e1e1e;
+    --shadow: rgba(255, 255, 255, 0.2);
+}

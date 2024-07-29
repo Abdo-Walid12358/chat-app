@@ -1,0 +1,33 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 10px;
+    margin: 4px 0;
+    border-radius: 10px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.message.from {
+    background-color: #DCF8C6; /* Light green background for sent messages */
+    align-self: flex-end; /* Align messages to the right */
+}
+
+.message.to {
+    background-color: #FFFFFF; /* White background for received messages */
+    align-self: flex-start; /* Align messages to the left */
+    border: 1px solid #E1E1E1;
+}
+
+.message-content {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.message-timestamp {
+    font-size: 10px;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}

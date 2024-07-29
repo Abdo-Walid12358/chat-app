@@ -1,0 +1,184 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-main);
+    padding: 20px;
+    background-color: black;
+}
+.main form{
+    z-index: 1;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-form);
+    border-radius: 5px;
+    border: 2px solid var(--color--1);
+    background-color: var(--section-2);
+}
+.main .logo {
+    width: 100%;
+    text-align: center;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    gap: 5px;
+}
+.main .logo img {
+    width: 60px;
+}
+.main form .socials {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    gap: 10px;
+}
+.main form .socials a {
+    color: white;
+    background: var(--color);
+    border: 2px solid var(--color);
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 5px;
+    transition: var(--time) ease;
+}
+.main form .socials img {
+    background-color: white;
+    color: var(--color);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 4px;
+    border: 2px solid transparent;
+    transition: var(--time) ease;
+}
+.main form .socials a {
+    cursor: pointer;
+}
+.main form .socials a p {
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-inline: auto;
+}
+.main form .socials a:hover {
+    color: var(--color-main);
+    border-color: var(--color--1);
+    transform: scale(1.04);
+    background-color: transparent;
+}
+.main form .socials a:hover img {
+    border: 2px solid var(--color-main);
+}
+.main form .or {
+    width: 100%;
+    border-bottom: 3px solid var(--color--1);
+    margin: 10px;
+    margin-inline: auto;
+    position: relative;
+}
+.main form .or::before {
+    content: "OR";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color--1);
+    font-weight: 900;
+    background-color: var(--section-2);
+    padding: 5px 10px;
+}
+.main label {
+    font-weight: 600;
+}
+.main input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: var(--time) ease;
+}
+.main input {
+    border: 3px solid transparent;
+    background-color: var(--section-1);
+    margin-bottom: 10px;
+    color: var(--color-main);
+}
+.main input:focus {
+    border-color: var(--color--1);
+}
+.main button {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: var(--color--1);
+    border: 3px solid var(--color--1);
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    margin: 8px 0;
+    transition: var(--time) ease;
+}
+.main button:hover {
+    background-color: transparent;
+    color: var(--color-main);
+}
+.main .link {
+    text-align: center;
+    font-size: 14px;
+}
+.main .link a {
+    color: var(--color--1);
+}
+.main .link a:hover {
+    text-decoration: underline;
+}
+.main form .picture-preview {
+    display: none;
+    width: 60%;
+    height: 170px;
+    margin: 10px auto;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.main form .add-picture {
+    width: 60%;
+    height: 170px;
+    border-radius: 5px;
+    border: 2px dashed var(--color-main);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    margin: 10px auto;
+}
+
+
+@media (max-width: 900px) {
+    .main {
+        padding: 0;
+    }
+    .main form {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        border: none;
+    }
+}
